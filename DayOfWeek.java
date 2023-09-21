@@ -22,6 +22,6 @@ public class DayOfWeek {
             "Thursday", "Friday", "Saturday"
         };
 
-        System.out.println("Day of the week is " + daysOfWeek[d0]);2
+        System.out.println("Day of the week is " + daysOfWeek[d0]);
     }
 }
