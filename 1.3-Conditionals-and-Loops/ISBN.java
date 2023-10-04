@@ -4,6 +4,7 @@ public class ISBN{
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the first 9 digits of an ISBN as an integer: ");
         int n = sc.nextInt();
+        int n1 = n;
         sc.close();
 
         int sum = 0;
@@ -13,7 +14,7 @@ public class ISBN{
             n = n / 10;
         }
 
-        System.out.print("The full ISBN number is " + n);
+        System.out.print("The full ISBN number is " + n1);
         if      (sum % 11 == 1) System.out.println("X");
         else if (sum % 11 == 0) System.out.println("0");
         else                    System.out.println(11 - (sum % 11));
